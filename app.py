@@ -4,7 +4,7 @@ from recommendation import recommend_routines  # Your recommendation logic
 from pdf_generator import generate_pdf  # Optional: PDF generation
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "https://skin-genie-edyi.vercel.app/"}})  # Enable CORS for all routes
 
 @app.route('/recommend', methods=['POST'])
 def recommend():
