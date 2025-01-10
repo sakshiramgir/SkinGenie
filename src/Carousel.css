@@ -1,0 +1,23 @@
+/* Carousel.css */
+
+.slick-slider {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.slick-slide img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slick-dots li button:before {
+    color: #ff69b4;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #ff69b4;
+}
